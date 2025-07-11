@@ -205,6 +205,8 @@ import pipcl
 
 
 _log_prefix = None
+os.environ["PYMUPDF_SETUP_MUPDF_TESSERACT"] = "0"
+
 def log( text):
     global _log_prefix
     if not _log_prefix:
